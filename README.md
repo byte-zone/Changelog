@@ -33,8 +33,7 @@ _Improved security, streamlined auto-login, and enhanced product performance._
 #### TwsMapper:
 _Now connects to our servers for seamless updates, providing automatic updates for users._
 #### Twilight Launcher (Public):
-_Enhanced similarly to TwsMapper. Please note that RDR2 and Battlefield 1 are temporarily offline due to an impending BattleEye release for RDR2. EA also launched an update on October 10 that includes their new EAAC kernel driver. We’ve paused support for BF1 and RDR2 to prevent any bans, as none of our users have reported bans due to our products.
-_
+_Enhanced similarly to TwsMapper. Please note that RDR2 and Battlefield 1 are temporarily offline due to an impending BattleEye release for RDR2. EA also launched an update on October 10 that includes their new EAAC kernel driver. We’ve paused support for BF1 and RDR2 to prevent any bans, as none of our users have reported bans due to our products._
 
 ### New Feature ✨
 _We're introducing a new Lua API, allowing for custom Lua scripts to adjust aimbot settings, entities, and more. This feature will integrate seamlessly with the config system and open up a marketplace for Lua developers to share and monetize their work._
