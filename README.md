@@ -7,6 +7,13 @@ _We've updated our backend to prepare for this major release. Our API now handle
 ### Advanced Calculations & Performance
 _Since Twilight operates on a server-side framework, user network speeds can impact performance, leading to potential lag. To address this, we’ve refined and upgraded our logic to ensure the aimbot runs smoothly with minimal delay. However, Twilight is not fully server-dependent; for example, features like outline rendering are managed locally. For a more detailed overview, please refer to the image below._
 
+
+
+<p align="center">
+  <img src="https://github.com/byte-zone/Twilight_PatchNotes/blob/main/Assets/Twilight%20logic.jpg">
+</p>
+
+
 ## Drivers 🖥️
 #### TwsCore:
 _Now includes kernel spoofing to minimize detection by programs like Vanguard. We also plan to sign all Twilight products, eliminating the need to disable Windows Defender, Secure Boot, or TPM._
