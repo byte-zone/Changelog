@@ -13,7 +13,7 @@
 1. Aimbot needs to be re-written.
 2. Most visuals are non-functional.
 
-The previous anti-cheat, Warden, has been replaced by Eidolon, the new anti-cheat system.
+The previous anti-cheat, **Warden**, has been replaced by **Eidolon**, the new anti-cheat system.
 
 ### Timeline for Twilight Update: 
 We plan to proceed cautiously with updates due to the new anti-cheat. Our priority is to thoroughly test the product before it goes live again, as we want to ensure user safety and avoid any bans.
