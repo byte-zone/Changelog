@@ -98,8 +98,8 @@ local EnemyPosition = (m_lEntity - lPlayer):Normalized() -- Scaling the directio
 
 local TrackingSpeed = 5.0
 -- Calculates the enemy's position.
-The new angle should always use "/" instead of "*"
-as multiplication makes the tracking too aggressive.
+-- The new angle should always use "/" instead of "*"
+-- as multiplication makes the tracking too aggressive.
 local CalculatedAngle = lPlayer + (EnemyPosition / TrackingSpeed)  
 
 
