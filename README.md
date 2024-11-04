@@ -96,8 +96,12 @@ local Disctance = lPlayer:TwDistance(m_lEntity)  -- Calculate distance to the en
 
 local EnemyPosition = (m_lEntity - lPlayer):Normalized() -- Scaling the direction of the vector
 
-local TrackingSpeed = 5.0  -- Speed to move towards the enemy
-local CalculatedAngle = lPlayer + (EnemyPosition / TrackingSpeed)  -- Calculated the enemy position, Always the new angle should be "/" not * this will make the tracking aggressive
+local TrackingSpeed = 5.0
+-- Calculates the enemy's position.
+The new angle should always use "/" instead of "*"
+as multiplication makes the tracking too aggressive.
+local CalculatedAngle = lPlayer + (EnemyPosition / TrackingSpeed)  
+
 
 if Disctance < 100.0 then
     -- If target less than 100.0 trigger VK_RBUTTON
