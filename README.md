@@ -94,17 +94,49 @@ local m_lEntity = Vector3(m_lEntity.X, m_lEntity.Y, m_lEntity.Z)                
 local Disctance = lPlayer:TwDistance(m_lEntity)  -- Calculate distance to the enemy
 
 
-local EnemyPosition = (m_lEntity - lPlayer):Normalized() -- Scaling the direction vector
+local EnemyPosition = (m_lEntity - lPlayer):Normalized() -- Scaling the direction of the vector
 
 local TrackingSpeed = 5.0  -- Speed to move towards the enemy
-local CalculatedAngle = lPlayer + (EnemyPosition * TrackingSpeed)  -- Calculated position the enemy
+local CalculatedAngle = lPlayer + (EnemyPosition / TrackingSpeed)  -- Calculated the enemy position, Always the new angle should be "/" not * this will make the tracking aggressive
 
 if Disctance < 100.0 then
-    -- Trigger VK_RBUTTON
+    -- If target less than 100.0 trigger VK_RBUTTON
     SetKey(0x2) 
 end
 ```
+### Full Twilight Variables 
+```cpp
+// Primary Aimbot
+b_TriggerBot = Tw.at("Profile").at("b_TriggerBot").get<bool>();
+b_LockOnTarget = Tw.at("Profile").at("b_LockOnTarget").get<bool>();
+b_Prediction = Tw.at("Profile").at("b_Prediction").get<bool>();
+b_GraviryPrediction = Tw.at("Profile").at("b_GraviryPrediction").get<bool>();
+b_Flick = Tw.at("Profile").at("b_Flick").get<bool>();
+b_Tracking = Tw.at("Profile").at("b_Tracking").get<bool>();
+b_ClosestHitbox = Tw.at("Profile").at("b_ClosestHitbox").get<bool>();
+b_DrawFov = Tw.at("Profile").at("b_DrawFov").get<bool>();
+b_Switch_Team = Tw.at("Profile").at("b_Switch_Team").get<bool>();
+b_PrimaryFlick_Smooth = Tw.at("Profile").at("b_PrimaryFlick_Smooth").get<float>();
+b_Hitbox = Tw.at("Profile").at("b_Hitbox").get<float>();
+b_Aimbot_Key = Tw.at("Profile").at("b_Aimbot_Key").get<int>();
+b_TrackingSmooth = Tw.at("Profile").at("b_TrackingSmooth").get<float>();
+b_TrackingSpeed = Tw.at("Profile").at("b_TrackingSpeed").get<float>();
+b_Trigger_Key = Tw.at("Profile").at("b_Trigger_Key").get<int>();
 
+// Secondary Aimbot
+b_SecondaryAimbot = Tw.at("Profile").at("b_SecondaryAimbot").get<bool>();
+b_SecondaryFlick = Tw.at("Profile").at("b_SecondaryFlick").get<bool>();
+b_SecondaryTracking = Tw.at("Profile").at("b_SecondaryTracking").get<bool>();
+b_SecondaryPrediction = Tw.at("Profile").at("b_SecondaryPrediction").get<bool>();
+b_SecondaryGravity_Prediction = Tw.at("Profile").at("b_SecondaryGravity_Prediction").get<bool>();
+b_SecondaryFlick_Smooth = Tw.at("Profile").at("b_SecondaryFlick_Smooth").get<float>();
+b_Secondary_TrackingSpeed = Tw.at("Profile").at("b_Secondary_TrackingSpeed").get<float>();
+b_Secondary_TrackingSmooth = Tw.at("Profile").at("b_Secondary_TrackingSmooth").get<float>();
+b_SecondaryAimbot_Key = Tw.at("Profile").at("b_SecondaryAimbot_Key").get<int>();
+b_SecondaryLockOnTarget = Tw.at("Profile").at("b_SecondaryLockOnTarget").get<bool>();
+b_Secondary_SwitchTeam = Tw.at("Profile").at("b_Secondary_SwitchTeam").get<bool>();
+b_SecondaryLockOnTarget = Tw.at("Profile").at("b_SecondaryLockOnTarget").get<bool>();
+```
 ### Known Issues for 1.9.2
 NONE
 
