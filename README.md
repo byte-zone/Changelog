@@ -22,13 +22,15 @@ TwWrite<float>(lEntity.GetAngle + Get->o_Recoil, 1);
 TwWrite<float>(lEntity.GetAngle + Get->o_RecoilC, 0);
 ```
 ### Twilight Public launcher
-1. Updated to latest endpoint
-2. Battleye Apc bypass
+1. Updated to the latest endpoint
+2. Battleye APC bypass
 3. EAAC Bypass
 
-- _Please note before we luanch any update or bypass we have test our products first so 2 & 3 will take a time to be released we want to make sure it's safe 100%_
+- _**Please note:** Before launching any update or bypass, we thoroughly test our products. Therefore, items 2 and 3 may take additional time to be released as we ensure they are 100% safe._
 
-
+### Twilight Solutions Mapper (TwsMapper)
+1. Updated to the latest endpoint 
+2. Twilight drivers now load and unload as legitimate drivers
 ### Twilight Lua API
 The Twilight Lua API is a feature we’ve been developing over the past few months. This addition allows users not only to customize settings through the Twilight GUI but also to modify the aimbot, ESP, and nearly all Twilight features. We’re continuing to refine this functionality to enhance both our product and user experience. We encourage you to explore how our Lua API works, and we’d love to hear feedback from the community to improve and tailor the API to meet user needs.
 
