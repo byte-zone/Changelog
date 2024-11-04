@@ -104,7 +104,7 @@ if Disctance < 100.0 then
     SetKey(0x2) 
 end
 ```
-### Full Twilight Variables 
+### Twilight Variables Sample
 ```cpp
 // Primary Aimbot
 b_TriggerBot = Tw.at("Profile").at("b_TriggerBot").get<bool>();
