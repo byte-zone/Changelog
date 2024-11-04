@@ -1,8 +1,8 @@
-# Twilight 1.9.2 Hotfix November 04, 2024
-1. Fixed Cr3 BSOD
+# Twilight 1.9.2 Hotfix - November 04, 2024
+1. Fixed Cr3 BSOD (the CR3 needed to be cached)
 2. Fixed Esp / Skeleton Posation
 3. Fixed Recoil
-4. All the functions now supporting TwGetFunctionSpoofedEx
+4. All functions now support `TwGetFunctionSpoofedEx`
 ```cpp
    TwGetFunctionSpoofedEx(void* Function, bool Function)
 ```
