@@ -106,36 +106,36 @@ end
 ```
 ### Twilight Variables Sample
 ```cpp
-// Primary Aimbot
-b_TriggerBot = Tw.at("Profile").at("b_TriggerBot").get<bool>();
-b_LockOnTarget = Tw.at("Profile").at("b_LockOnTarget").get<bool>();
-b_Prediction = Tw.at("Profile").at("b_Prediction").get<bool>();
-b_GraviryPrediction = Tw.at("Profile").at("b_GraviryPrediction").get<bool>();
-b_Flick = Tw.at("Profile").at("b_Flick").get<bool>();
-b_Tracking = Tw.at("Profile").at("b_Tracking").get<bool>();
-b_ClosestHitbox = Tw.at("Profile").at("b_ClosestHitbox").get<bool>();
-b_DrawFov = Tw.at("Profile").at("b_DrawFov").get<bool>();
-b_Switch_Team = Tw.at("Profile").at("b_Switch_Team").get<bool>();
-b_PrimaryFlick_Smooth = Tw.at("Profile").at("b_PrimaryFlick_Smooth").get<float>();
-b_Hitbox = Tw.at("Profile").at("b_Hitbox").get<float>();
-b_Aimbot_Key = Tw.at("Profile").at("b_Aimbot_Key").get<int>();
-b_TrackingSmooth = Tw.at("Profile").at("b_TrackingSmooth").get<float>();
-b_TrackingSpeed = Tw.at("Profile").at("b_TrackingSpeed").get<float>();
-b_Trigger_Key = Tw.at("Profile").at("b_Trigger_Key").get<int>();
+// Primary Aimbot 
+b_TriggerBot = TwSet.at("Profile").at("b_TriggerBot").TwGet<bool>(); 
+b_LockOnTarget = TwSet.at("Profile").at("b_LockOnTarget").TwGet<bool>(); 
+b_Prediction = TwSet.at("Profile").at("b_Prediction").TwGet<bool>(); 
+b_GraviryPrediction = TwSet.at("Profile").at("b_GraviryPrediction").TwGet<bool>(); 
+b_Flick = TwSet.at("Profile").at("b_Flick").TwGet<bool>(); 
+b_Tracking = TwSet.at("Profile").at("b_Tracking").TwGet<bool>(); 
+b_ClosestHitbox = TwSet.at("Profile").at("b_ClosestHitbox").TwGet<bool>(); 
+b_DrawFov = TwSet.at("Profile").at("b_DrawFov").TwGet<bool>(); 
+b_Switch_Team = TwSet.at("Profile").at("b_Switch_Team").TwGet<bool>(); 
+b_PrimaryFlick_Smooth = TwSet.at("Profile").at("b_PrimaryFlick_Smooth").TwGet<float>(); 
+b_Hitbox = TwSet.at("Profile").at("b_Hitbox").TwGet<float>();  
+b_Aimbot_Key = TwSet.at("Profile").at("b_Aimbot_Key").TwGet<int>(); 
+b_TrackingSmooth = TwSet.at("Profile").at("b_TrackingSmooth").TwGet<float>(); 
+b_TrackingSpeed = TwSet.at("Profile").at("b_TrackingSpeed").TwGet<float>(); 
+b_Trigger_Key = TwSet.at("Profile").at("b_Trigger_Key").TwGet<int>(); 
 
-// Secondary Aimbot
-b_SecondaryAimbot = Tw.at("Profile").at("b_SecondaryAimbot").get<bool>();
-b_SecondaryFlick = Tw.at("Profile").at("b_SecondaryFlick").get<bool>();
-b_SecondaryTracking = Tw.at("Profile").at("b_SecondaryTracking").get<bool>();
-b_SecondaryPrediction = Tw.at("Profile").at("b_SecondaryPrediction").get<bool>();
-b_SecondaryGravity_Prediction = Tw.at("Profile").at("b_SecondaryGravity_Prediction").get<bool>();
-b_SecondaryFlick_Smooth = Tw.at("Profile").at("b_SecondaryFlick_Smooth").get<float>();
-b_Secondary_TrackingSpeed = Tw.at("Profile").at("b_Secondary_TrackingSpeed").get<float>();
-b_Secondary_TrackingSmooth = Tw.at("Profile").at("b_Secondary_TrackingSmooth").get<float>();
-b_SecondaryAimbot_Key = Tw.at("Profile").at("b_SecondaryAimbot_Key").get<int>();
-b_SecondaryLockOnTarget = Tw.at("Profile").at("b_SecondaryLockOnTarget").get<bool>();
-b_Secondary_SwitchTeam = Tw.at("Profile").at("b_Secondary_SwitchTeam").get<bool>();
-b_SecondaryLockOnTarget = Tw.at("Profile").at("b_SecondaryLockOnTarget").get<bool>();
+// Secondary Aimbot 
+b_SecondaryAimbot = TwSet.at("Profile").at("b_SecondaryAimbot").TwGet<bool>(); 
+b_SecondaryFlick = TwSet.at("Profile").at("b_SecondaryFlick").TwGet<bool>(); 
+b_SecondaryTracking = TwSet.at("Profile").at("b_SecondaryTracking").TwGet<bool>(); 
+b_SecondaryPrediction = TwSet.at("Profile").at("b_SecondaryPrediction").TwGet<bool>(); 
+b_SecondaryGravity_Prediction = TwSet.at("Profile").at("b_SecondaryGravity_Prediction").TwGet<bool>(); 
+b_SecondaryFlick_Smooth = TwSet.at("Profile").at("b_SecondaryFlick_Smooth").TwGet<float>(); 
+b_Secondary_TrackingSpeed = TwSet.at("Profile").at("b_Secondary_TrackingSpeed").TwGet<float>(); 
+b_Secondary_TrackingSmooth = TwSet.at("Profile").at("b_Secondary_TrackingSmooth").TwGet<float>(); 
+b_SecondaryAimbot_Key = TwSet.at("Profile").at("b_SecondaryAimbot_Key").TwGet<int>(); 
+b_SecondaryLockOnTarget = TwSet.at("Profile").at("b_SecondaryLockOnTarget").TwGet<bool>(); 
+b_Secondary_SwitchTeam = TwSet.at("Profile").at("b_Secondary_SwitchTeam").TwGet<bool>(); 
+
 ```
 ### Known Issues for 1.9.2
 NONE
