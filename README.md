@@ -1,5 +1,5 @@
 # Twilight Changelog
-### TwsMapper update - November 10, 2024
+### TwsMapper update 1.1 - November 10, 2024
 - **Updated TwsSpoofer:**
 Now supports SIMBOIOS, CPU, RAM, SSD/NVMe, BIOS, Motherboard, and Windows Product Key
 ## Twilight 1.9.2 Hotfix - November 04, 2024
