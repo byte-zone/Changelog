@@ -2,7 +2,7 @@
 ### TwsMapper update 1.1 - November 10, 2024
 - **Updated TwsSpoofer:**
 Now supports SIMBOIOS, CPU, RAM, SSD/NVMe, BIOS, Motherboard, and Windows Product Key
-## Twilight 1.9.2 Hotfix - November 04, 2024
+### Twilight 1.9.2 Hotfix - November 04, 2024
 1. Fixed Cr3 BSOD (the CR3 needed to be cached)
 2. Fixed Esp / Skeleton Posation
 3. Fixed Recoil
