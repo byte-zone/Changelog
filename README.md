@@ -1,4 +1,9 @@
 # Twilight Changelog
+### Twilight 1.9.5 - November 13, 2024
+Updated to the latest game patch.
+
+Fixed high CPU usage.
+
 ### TwsMapper update 1.1 - November 10, 2024
 - **Updated TwsSpoofer:**
 Now supports SIMBOIOS, CPU, RAM, SSD/NVMe, BIOS, Motherboard, and Windows Product Key
