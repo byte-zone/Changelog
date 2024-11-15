@@ -1,4 +1,6 @@
 # Twilight Changelog
+### Twilight 1.9.6 - November 15, 2024
+Updated to the latest game patch.
 ### Twilight 1.9.5 - November 13, 2024
 Updated to the latest game patch.
 
