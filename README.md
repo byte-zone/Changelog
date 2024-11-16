@@ -1,6 +1,31 @@
 # Twilight Changelog
+### Twilight 1.9.7 Upcoming Update
+#### Changes and Fixes:
+1. Fixed prediction issues.
+2. Removed the team outline feature.
+3. Removed skeleton-related features, including skeleton thickness and dots.
+4. Removed Hanzo auto-prediction.
+
+#### Reworked the Sojourn bot:
+
+_The Sojourn bot no longer relies on both the entity’s health and the gauge charge. Previously, it would release the charge if the gauge was at 30 and the enemy’s health was 30. Now, the charge will only be released once it reaches 50._
+
+#### Improvements:
+
+Enhanced error handling for _Tws.sys_.
+
+#### Work in Progress:
+
+Auto-pick for heroes.
+
+---
+
+
 ### Twilight 1.9.6 - November 15, 2024
 Updated to the latest game patch.
+
+---
+
 ### Twilight 1.9.5 - November 13, 2024
 Updated to the latest game patch.
 
