@@ -5,6 +5,7 @@
 2. Removed the team outline feature.
 3. Removed skeleton-related features, including skeleton thickness and dots.
 4. Removed Hanzo auto-prediction.
+5. Fixed DSE with `SpTwilight.sys`.
 
 #### Reworked the Sojourn bot:
 
@@ -12,11 +13,13 @@ _The Sojourn bot no longer relies on both the entity’s health and the gauge ch
 
 #### Improvements:
 
-Enhanced error handling for _Tws.sys_.
+Enhanced error handling for `Tws.sys`.
 
 #### Work in Progress:
 
-Auto-pick for heroes.
+1. Auto-pick for heroes.
+2. MAC Address & VolumeId Spoofing.
+3. CPU Spoofing Improvements.
 
 ---
 
