@@ -9,7 +9,7 @@
 6. Removed hitbox resizing from the primary and secondary aimbot.
 7. Removed ESP colors.
 8. Removed Hanzo auto-prediction.
-9. Fixed DSE with SpTwilight.sys.
+9. Fixed DSE with `SpTwilight.sys`.
 10. Replaced `TwsCore.sys` with a better, signed driver: `TwCmdControl.sys`.
 #### Reworked the Sojourn bot:
 
