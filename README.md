@@ -4,12 +4,17 @@
 1. Fixed prediction issues.
 2. Removed the team outline feature.
 3. Removed skeleton-related features, including skeleton thickness and dots.
-4. Removed Hanzo auto-prediction.
-5. Fixed DSE with `SpTwilight.sys`.
-
+4. Removed ESP colors (Skeleton Vis/Invis and Teammates Color).
+5. Removed the rainbow outline feature.
+6. Removed hitbox resizing from the primary and secondary aimbot.
+7. Removed ESP colors.
+8. Removed Hanzo auto-prediction.
+9. Fixed DSE with SpTwilight.sys.
+10. Replaced `TwsCore.sys` with a better, signed driver: `TwCmdControl.sys`.
 #### Reworked the Sojourn bot:
 
 _The Sojourn bot no longer relies on both the entity’s health and the gauge charge. Previously, it would release the charge if the gauge was at 30 and the enemy’s health was 30. Now, the charge will only be released once it reaches 50._
+
 
 #### Improvements:
 
