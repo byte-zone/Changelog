@@ -1,5 +1,5 @@
 # Twilight Changelog
-### Twilight 1.9.7 & TwsMaooer 1.2 update
+### Twilight 1.9.7 & TwsMaooer 1.2 update - November 18, 2024
 #### Changes and Fixes:
 1. Fixed prediction issues.
 2. Removed the team outline feature.
@@ -11,11 +11,11 @@
 8. Removed Hanzo auto-prediction.
 9. Added a new no-recoil system.
 10. Reintroduced the legacy no-recoil (old system).
-11. Added HP Pack drawing
-12. Added HP Pack Distance
-13. Added HP Pack Box
+11. Added HP Pack drawing.
+12. Added HP Pack Distance.
+13. Added HP Pack Box.
 14. Fixed DSE with `SpTwilight.sys`.
-15. TwsCore driver has been replaced with our newest kernel driver TwCmdCtrl.sys
+15. `TwsCore.sys` driver has been replaced with our newest kernel driver `TwCmdCtrl.sys`.
 
 #### Reworked the Sojourn bot:
 
@@ -25,6 +25,10 @@ _The Sojourn bot no longer relies on both the entity’s health and the gauge ch
 #### Improvements:
 
 Enhanced error handling for `Tws.sys`.
+
+### TwsMapper 1.2 Update
+Pushed the new driver `TwCmdCtrl.sys` to replace the previous `TwsCore.sys` driver.
+
 
 #### Work in Progress:
 
