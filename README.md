@@ -1,5 +1,5 @@
 # Twilight Changelog
-### Twilight 1.9.7 & TwsMaooer 1.2 update - November 18, 2024
+### Twilight 1.9.7 & Our Newest Mapper TwKernelBridge - November 18, 2024
 #### Changes and Fixes:
 1. Fixed prediction issues.
 2. Removed the team outline feature.
@@ -26,7 +26,7 @@ _The Sojourn bot no longer relies on both the entity’s health and the gauge ch
 
 Enhanced error handling for `Tws.sys`.
 
-#### TwsMapper 1.2 Update
+#### TwKernelBdridge 
 Pushed the new driver `TwCmdCtrl.sys` to replace the previous `TwsCore.sys` driver.
 
 
