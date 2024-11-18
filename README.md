@@ -26,7 +26,7 @@ _The Sojourn bot no longer relies on both the entity’s health and the gauge ch
 
 Enhanced error handling for `Tws.sys`.
 
-### TwsMapper 1.2 Update
+#### TwsMapper 1.2 Update
 Pushed the new driver `TwCmdCtrl.sys` to replace the previous `TwsCore.sys` driver.
 
 
