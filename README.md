@@ -1,4 +1,102 @@
 # Twilight Changelog
+### TwKernelBridge Update & Announcement - November 19, 2024
+We received two ban reports yesterday. As a precautionary measure, we temporarily suspended Twilight to ensure there were no detections on our side.
+
+After thoroughly testing both users' configurations and our product in rage mode for three hours, we confirmed everything is functioning as intended. The bans were caused by user abuse (rage behavior) and not due to any issues with our development. However, we’ve always been transparent with our community - unlike others - and want to share a few key methods we use to keep you protected from detection:
+
+1. **Callstack spoofing**
+
+We execute each function indirectly instead of calling them directly. At runtime, we generate shellcode and allocate executable memory to copy and execute the function. Each function is executed in a separate memory region, ensuring no suspicious traces. Here’s the function signature:
+```C++
+TwShellCodeGenerator(Func f, Args&... args)
+```
+2. **Custom Mouse Events**
+
+We don’t use Windows API mouse events. Instead, our private implementation ensures that no Warden kernel modules are triggered. For instance:
+```C++
+VOID TwSendMouseEventEx(DWORD dwFlags, DWORD dx, DWORD dy, DWORD dwData, ULONG_PTR dwExtraInfo) 
+{
+    INPUT Input[3] = { 0 };
+    Input[0].type = INPUT_MOUSE;
+    Input[0].mi.dx = dx;
+    Input[0].mi.dy = dy;
+    Input[0].mi.mouseData = dwData;
+    Input[0].mi.dwFlags = dwFlags;
+    Input[0].mi.time = 0;
+    Input[0].mi.dwExtraInfo = dwExtraInfo;
+
+    _NtUserSendInput((UINT)1, (LPINPUT)&Input, (INT)sizeof(INPUT));
+}
+```
+With the internal implementation:
+```asm
+_NtUserSendInput PROC
+    mov r10, rcx
+    mov eax, 3735928559
+    syscall
+    ret
+_NtUserSendInput ENDP
+END
+```
+3. **Custom Hashing Algorithm**
+
+We use a proprietary algorithm to hash each line of code, ensuring complexity and obfuscation:
+```C++
+TwGenHash(std::string block)
+```
+
+4. **Custom XOR and LLVM Integration**
+
+To further enhance security, we employ a custom XOR mechanism and integrate LLVM-based obfuscation.
+
+5. **Legitimate Signed Drivers**
+
+We utilize legitimate, signed kernel drivers. Our `TwKernelBridge` load these drivers as normal drivers using the `NtLoader` function, ensuring seamless integration.
+
+6. **Advanced Low-Level Spoofing**
+
+Our spoofing techniques go beyond the limits of Warden and Eidolon. An example:
+
+
+```asm
+_TwSpoof proc
+    pop r11
+    add rsp, 8
+    mov rax, [rsp + 24]
+
+    mov r10, [rax]
+    mov [rsp], r10
+
+    mov r10, [rax + 8]
+    mov [rax + 8], r11
+
+    mov [rax + 16], rbx
+    lea rbx, fixup
+    mov [rax], rbx
+    mov rbx, rax
+
+    jmp r10
+
+fixup:
+    sub rsp, 16
+    mov rcx, rbx
+    mov rbx, [rcx + 16]
+    jmp QWORD PTR [rcx + 8]
+_TwSpoof_stub endp
+end
+```
+Please note that these are just examples of the methods we employ, not a comprehensive list. Since day one, **we’ve prioritized user safety and experience above all else**. With this in mind, we’ve released a new update to our `TwKernelBridge`, adding an additional security layer to reinforce user protection.
+
+In addition, we’ve given each user 6 extra hours of time to make up for the temporary suspension.
+
+**Twilight will always have your back.**
+
+_Best regards,_
+
+
+_Twilight Solutions_
+
+---
 ### Twilight 1.9.7 & Our Newest Mapper TwKernelBridge - November 18, 2024
 #### Changes and Fixes:
 1. Fixed prediction issues.
