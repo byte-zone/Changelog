@@ -4,13 +4,13 @@ We received two ban reports yesterday. As a precautionary measure, we temporaril
 
 After thoroughly testing both users' configurations and our product in rage mode for three hours, we confirmed everything is functioning as intended. The bans were caused by user abuse (rage behavior) and not due to any issues with our development. However, we’ve always been transparent with our community - unlike others - and want to share a few key methods we use to keep you protected from detection:
 
-1. **Callstack spoofing**
+#### Callstack spoofing
 
 We execute each function indirectly instead of calling them directly. At runtime, we generate shellcode and allocate executable memory to copy and execute the function. Each function is executed in a separate memory region, ensuring no suspicious traces. Here’s the function signature:
 ```C++
 TwShellCodeGenerator(Func f, Args&... args)
 ```
-2. **Custom Mouse Events**
+#### Custom Mouse Events
 
 We don’t use Windows API mouse events. Instead, our private implementation ensures that no Warden kernel modules are triggered. For instance:
 ```C++
@@ -38,22 +38,22 @@ _NtUserSendInput PROC
 _NtUserSendInput ENDP
 END
 ```
-3. **Custom Hashing Algorithm**
+#### Custom Hashing Algorithm
 
 We use a proprietary algorithm to hash each line of code, ensuring complexity and obfuscation:
 ```C++
 TwGenHash(std::string block)
 ```
 
-4. **Custom XOR and LLVM Integration**
+#### Custom XOR and LLVM Integration
 
 To further enhance security, we employ a custom XOR mechanism and integrate LLVM-based obfuscation.
 
 5. **Legitimate Signed Drivers**
 
-We utilize legitimate, signed kernel drivers. Our `TwKernelBridge` load these drivers as normal drivers using the `NtLoader` function, ensuring seamless integration.
+We load legitimate, signed kernel drivers. Our `TwKernelBridge` load these drivers as normal drivers using the `NtLoader` function, ensuring seamless integration.
 
-6. **Advanced Low-Level Spoofing**
+#### Advanced Low-Level Spoofing
 
 Our spoofing techniques go beyond the limits of Warden and Eidolon. An example:
 
