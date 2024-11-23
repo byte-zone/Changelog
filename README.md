@@ -1,4 +1,24 @@
 # Twilight Changelog
+### Twilight Update: TwLoader 1.9.8 | TwKernelBridge - November 24, 2024
+#### Changes and Fixes:
+1. Fixed duplicated hero rendering image.
+2. Fixed UI improvements. The UI is now draggable.
+3. Removed Draw HP Pack, Box, and Distance.
+4. Sojourn bot now has speed/acceleration sliders.
+5. Added Hazard (New Tank) settings.
+
+
+### New:
+1. Added Tracer Auto Recall.
+2. Added Junker Queen Auto Commanding Shout.
+3. Added Genji Auto Deflect.
+4. Added Zarya Auto Bubble.
+5. Added Moira Auto Fade.
+
+### TwKernelBridge: 
+Twilight Temp Spoofer is updating, no ETA.
+
+---
 ### TwKernelBridge Update & Announcement - November 19, 2024
 We received two ban reports yesterday. As a precautionary measure, we temporarily suspended Twilight to ensure there were no detections on our side.
 
