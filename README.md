@@ -1,4 +1,9 @@
 # Twilight Changelog
+### Twilight Update: TwLoader 1.9.9 - November 25, 2024
+#### Changes and Fixes:
+1. Fixed performance issues when using the menu.
+
+---
 ### Twilight Update: TwLoader 1.9.8 | TwKernelBridge - November 24, 2024
 #### Changes and Fixes:
 1. Fixed duplicated hero rendering image.
