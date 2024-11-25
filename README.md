@@ -1,5 +1,5 @@
 # Twilight Changelog
-### Twilight Update: TwLoader 1.9.9 - November 25, 2024
+### Twilight Update: TwLoader 1.9.9 - November 26, 2024
 #### Changes and Fixes:
 1. Fixed performance issues when using the menu.
 
