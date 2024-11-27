@@ -1,4 +1,9 @@
 # Twilight Changelog
+
+### Twilight Update: TwLoader 1.10.1 - November 27, 2024
+Updated to the latest game patch.
+
+---
 ### Twilight Update: TwLoader 1.9.9 - November 26, 2024
 #### Changes and Fixes:
 1. Fixed performance issues when using the menu.
