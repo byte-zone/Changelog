@@ -1,5 +1,12 @@
 # Twilight Changelog
+### Twilight Update: TwLoader 1.12 - December 11, 2024
+Updated to the latest game patch.
 
+---
+### Twilight Update: TwLoader 1.12 - December 7, 2024
+Multiple builds update.
+
+---
 ### Twilight Update: TwLoader 1.10 - November 27, 2024
 Updated to the latest game patch.
 
