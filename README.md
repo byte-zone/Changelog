@@ -1,6 +1,18 @@
 # Twilight Changelog
-### Twilight Update: TwLoader 1.21 - December 11, 2024
+### Twilight Update: TwLoader 1.13 - December 21, 2024
 Updated to the latest game patch.
+
+### New Products comming soon
+#### TwpIw 
+TwpIw is coming soon as a beta release with the following features:
+- Full visual support, including skeletons, ESP boxes, and more.
+- Fully customizable smooth aimbot.
+#### TwRage 
+TwRage is coming with full exploitation capabilities for the RAGE Engine (Rockstar Advanced Game Engine). Features include:
+- Unique exploits such as spawning objects and entities to overload servers.
+- Silent aim, magic bullets, and tracer bullets also included.
+
+Please note that these are not the only features included.
 
 ---
 ### Twilight Update: TwLoader 1.12 - December 11, 2024
